@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.btn {
+  font-size: 20px;
+  width: 80px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.listItem {
+  width: 320px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
