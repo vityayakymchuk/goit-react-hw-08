@@ -1,9 +1,9 @@
 import css from './AppBar.module.css';
 import Navigation from '../Navigation/Navigation';
 import AuthNav from '../AuthNav/AuthNav';
-import Welcome from '../Welcome/Welcome';
+import Welcome from '../UserMenu/UserMenu';
 import { useSelector } from 'react-redux';
-import { selectIsLoggedIn } from '../../redux/contacts/selectors';
+import { selectIsLoggedIn } from '../../redux/auth/selectors';
 
 export default function AppBar() {
 
