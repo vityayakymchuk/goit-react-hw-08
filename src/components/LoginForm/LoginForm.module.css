@@ -1,14 +1,14 @@
 .form {
-  border: 1px solid black;
   width: 320px;
-  height: auto;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 20px;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
+}
+
+.label {
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 4px;
 }
 
 .input {
@@ -17,8 +17,9 @@
   border: 1px solid black;
   border-radius: 5px;
   padding-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: transparent;
+  width: calc(100% - 20px);
 }
 
 .input:-webkit-autofill,
@@ -29,23 +30,23 @@
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.errorMessage {
+  color: red;
+  font-size: 18px;
+}
+
 .btn {
+  display: block;
   font-size: 20px;
   height: 25px;
   width: 200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: transparent;
   border: 1px solid black;
   border-radius: 5px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Додано перехід для background-color */
+  margin: 0 auto;
 }
 
 .btn:hover {
   transform: scale(1.1);
-}
-
-.error {
-  font-size: 15px;
-  color: red;
 }

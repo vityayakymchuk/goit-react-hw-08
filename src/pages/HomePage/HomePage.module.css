@@ -1,0 +1,9 @@
+.hometext {
+  font-size: 60px;
+  color: #1f0f7b;
+  text-align: center;
+  font-weight: bold;
+  padding: 50px;
+  margin: 0 auto;
+  display: block;
+}
